@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Color Emoji','Open Sans', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.meme-generator {
+    text-align: center;
+    height: 100vh;
+}
+
+.meme-container {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.2rem 1rem;
+}
+
+.meme-container img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+.author {
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.meme-container .meme-author {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.meme-generator .generate-meme-btn {
+    padding: 8px 20px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #050505;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all ease-in-out 50ms;
+    box-shadow: 4px 4px 0px #ff0000;
+}
+
+.download-meme-btn {
+    padding: 8px 20px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #050505;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all ease-in-out 50ms;
+    box-shadow: 4px 4px 0px #a7a972;
+}
+
+.meme-generator .meme-title {
+    margin: 1rem;
+} 
+
+.generate-meme-btn:active {
+    box-shadow: 0px 0px 0px #ff0000;
+    transform: translate(4px, 4px);
+    /* box-shadow: 0px 0px 25px #6c3899; */
+    /* transform: scale(90%); */
+}
+
+@media screen and (max-width: 600px) {
+    .meme-generator {
+        height: 65vh;
+    }
+    
+    .meme-container {
+        height: 100%;
+        overflow: hidden;
+    }
+    .meme-generator img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+}
