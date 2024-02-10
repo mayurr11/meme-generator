@@ -8,21 +8,22 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #171717;
 }
 
 .meme-generator {
     text-align: center;
-    height: 100vh;
+    /* background-color: red; */
 }
 
 .meme-container {
-    height: 75vh;
+    /* height: 75vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: 1.2rem 1rem;
+    border-radius: 10px;
 }
 
 .meme-container img {
@@ -43,7 +44,7 @@ body {
 
 .meme-generator .generate-meme-btn {
     padding: 8px 20px;
-    margin: 10px;
+    margin: 20px;
     border: none;
     background-color: rgb(255, 255, 255);
     color: #050505;
@@ -52,6 +53,8 @@ body {
     border-radius: 10px;
     transition: all ease-in-out 50ms;
     box-shadow: 4px 4px 0px #ff0000;
+    position: fixed;
+    bottom: 10%;
 }
 
 .download-meme-btn {
@@ -80,7 +83,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .meme-generator {
-        height: 65vh;
+        /* height: 65vh; */
     }
     
     .meme-container {
